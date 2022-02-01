@@ -17,6 +17,8 @@ public class CreditService {
 
     public CreditResponse validateRentRequest(CreditRequest creditRequest){
 
+
+
         LOGGER.info("Start credit proposal of customer {}", creditRequest.getClientName());
 
 

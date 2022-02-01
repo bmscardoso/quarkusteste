@@ -15,6 +15,7 @@ import javax.ws.rs.core.Response;
 @Path("/credit")
 public class CreditResource {
 
+
     @Inject
     CreditService creditService;
 
