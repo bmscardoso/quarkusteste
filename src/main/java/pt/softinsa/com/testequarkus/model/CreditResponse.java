@@ -2,21 +2,22 @@ package pt.softinsa.com.testequarkus.model;
 
 public class CreditResponse{
 
-	private int creditDuration;
-	private String clientName;
-	private double monthlyPayment;
-	private int amountBorrowed;
 	private boolean isCreditAproved;
+	private String clientName;
+	private int amountBorrowed;
+	private int creditDuration;
+	private double monthlyPayment;
+
 
 	public CreditResponse() {
 	}
 
-	public int getCreditDuration() {
-		return creditDuration;
+	public boolean isCreditAproved() {
+		return isCreditAproved;
 	}
 
-	public void setCreditDuration(int creditDuration) {
-		this.creditDuration = creditDuration;
+	public void setCreditAproved(boolean creditAproved) {
+		isCreditAproved = creditAproved;
 	}
 
 	public String getClientName() {
@@ -27,14 +28,6 @@ public class CreditResponse{
 		this.clientName = clientName;
 	}
 
-	public double getMonthlyPayment() {
-		return monthlyPayment;
-	}
-
-	public void setMonthlyPayment(double monthlyPayment) {
-		this.monthlyPayment = monthlyPayment;
-	}
-
 	public int getAmountBorrowed() {
 		return amountBorrowed;
 	}
@@ -43,11 +36,19 @@ public class CreditResponse{
 		this.amountBorrowed = amountBorrowed;
 	}
 
-	public boolean isCreditAproved() {
-		return isCreditAproved;
+	public int getCreditDuration() {
+		return creditDuration;
 	}
 
-	public void setCreditAproved(boolean creditAproved) {
-		isCreditAproved = creditAproved;
+	public void setCreditDuration(int creditDuration) {
+		this.creditDuration = creditDuration;
+	}
+
+	public double getMonthlyPayment() {
+		return monthlyPayment;
+	}
+
+	public void setMonthlyPayment(double monthlyPayment) {
+		this.monthlyPayment = monthlyPayment;
 	}
 }

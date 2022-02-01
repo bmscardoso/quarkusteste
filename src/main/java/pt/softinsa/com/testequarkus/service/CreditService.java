@@ -44,9 +44,11 @@ public class CreditService {
 
         boolean isEffortable = CreditUtils.validateClientEffortRate(monthlyCreditPayment, creditRequest.getClientSalary());
 
+        CreditResponse result = CreditUtils.mountingCreditResponse(creditRequest.getClientName(), isEffortable, creditRequest.getDesireQuantity(), monthlyCreditPayment, creditRequest.getNumberOfPayingMonths() );
+
         LOGGER.info("Credit proposal completed. Returning the proposal response ");
 
-        return CreditUtils.mountingCreditResponse(creditRequest.getClientName(), isEffortable, creditRequest.getDesireQuantity(), monthlyCreditPayment, creditRequest.getNumberOfPayingMonths() );
+        return result;
     }
 
 
