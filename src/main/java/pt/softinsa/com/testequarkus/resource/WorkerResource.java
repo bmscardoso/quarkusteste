@@ -1,5 +1,6 @@
 package pt.softinsa.com.testequarkus.resource;
 
+import org.eclipse.microprofile.openapi.annotations.Operation;
 import org.jboss.resteasy.annotations.jaxrs.QueryParam;
 import pt.softinsa.com.testequarkus.model.Worker;
 import pt.softinsa.com.testequarkus.service.WorkerService;
@@ -19,6 +20,7 @@ public class WorkerResource {
     WorkerService workerService;
 
     @POST
+    @Operation(hidden=true)
     @Path("/raisesalary")
     @Produces(MediaType.APPLICATION_JSON)
     @Consumes(MediaType.APPLICATION_JSON)

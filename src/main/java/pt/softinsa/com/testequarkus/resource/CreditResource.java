@@ -28,6 +28,7 @@ public class CreditResource {
         CreditResponse  creditResponse = creditService.validateRentRequest(creditRequest);
 
         return Response.ok(creditResponse).build();
+
     }
 
 }
