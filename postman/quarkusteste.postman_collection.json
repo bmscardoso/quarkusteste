@@ -1,0 +1,132 @@
+{
+	"info": {
+		"_postman_id": "3b790836-0bac-4c99-8929-0ce4154200bb",
+		"name": "quarkusteste",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "changegender",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 1,\r\n    \"name\": \"Manel\",\r\n    \"eyesColor\": \"black\",\r\n    \"gender\": \"batatas\"\r\n}"
+				},
+				"url": {
+					"raw": "localhost:8080/customer/changegender",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"customer",
+						"changegender"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "changeeyes",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 1,\r\n    \"name\": \"Manel\",\r\n    \"gender\": \"male\",\r\n    \"eyesColor\": \"black\"\r\n}"
+				},
+				"url": {
+					"raw": "localhost:8080/customer/changeeyes/blue",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"customer",
+						"changeeyes",
+						"blue"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "raisesalary",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 10,\r\n    \"name\": \"Manel\",\r\n    \"function\": \"CEO\",\r\n    \"salary\": 2000\r\n}"
+				},
+				"url": {
+					"raw": "localhost:8080/worker/raisesalary?howmuch=1000",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"worker",
+						"raisesalary"
+					],
+					"query": [
+						{
+							"key": "howmuch",
+							"value": "1000"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "creditProporsal",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"clientId\": 15,\r\n    \"clientName\": \"Manel\",\r\n    \"clientSalary\": 1600,\r\n    \"clientYearsWorking\": 2,\r\n    \"desireQuantity\" : 26000,\r\n    \"numberOfPayingMonths\" :86\r\n}"
+				},
+				"url": {
+					"raw": "localhost:8080/credit/request",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"credit",
+						"request"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
