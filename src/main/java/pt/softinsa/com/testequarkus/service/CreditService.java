@@ -15,7 +15,7 @@ public class CreditService {
 
     private static final Logger LOGGER = LoggerFactory.getLogger(CreditService.class);
 
-    public CreditResponse validateRentRequest(CreditRequest creditRequest){
+    public CreditResponse validateCreditRequest(CreditRequest creditRequest){
 
 
 

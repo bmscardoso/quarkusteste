@@ -25,7 +25,7 @@ public class CreditResource {
     @Consumes(MediaType.APPLICATION_JSON)
     public Response requestCredit(CreditRequest creditRequest){
 
-        CreditResponse  creditResponse = creditService.validateRentRequest(creditRequest);
+        CreditResponse  creditResponse = creditService.validateCreditRequest(creditRequest);
 
         return Response.ok(creditResponse).build();
 
